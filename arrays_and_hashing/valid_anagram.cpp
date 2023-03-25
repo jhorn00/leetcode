@@ -12,6 +12,8 @@
 // for leetcode :(
 using namespace std;
 
+// Complexity depends on the sorting algo used by C++ for both time and space
+// Based on leetcode responses it seems to have very good space complexity, probably O(n)
 class Solution {
 public:
     bool isAnagram(string s, string t) {
