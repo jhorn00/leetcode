@@ -13,8 +13,8 @@
 // for leetcode :(
 using namespace std;
 
-// Time complexity is O(n^2logn) in the worst case since we loop over the strings n times and for each iteration
-// a sort is performed with O(nlogn) worst-case performance. After that another loop of O(n) is done.
+// Time complexity is O(n^2logm) in the worst case since we loop over the strings n times and for each iteration
+// a sort is performed with O(mlogm) worst-case performance. After that another loop of O(n) is done.
 // Space complexity is O(n) (ignoring the sort) since the data stored in the map and the return vector should
 // scale linearly with n. There might be some weirdness with how many anagrams are present in the list,
 // which might result in greater or fewer keys, though the map and return vectors
