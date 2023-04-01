@@ -14,12 +14,11 @@
 // for leetcode :(
 using namespace std;
 
-// This type of solution is supposedly O(n) for both.
-// Assuming insert or other functions aren't adding to it, I think that is correct.
-
+// Time: O(n) since we traverse the string once
+// Space: O(1) since I don't store anything other than my two iterators
 class Solution {
 public:
-    bool isAlphanumeric(char c)
+    bool isAlphanumeric(char &c)
     {
         if((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
         {
@@ -33,6 +32,7 @@ public:
         int j = s.size() - 1;
         while(i < j)
         {
+            // check if valid char for comparison
             while((i < j) && !isAlphanumeric(s[i]))
             {
                 i++;
