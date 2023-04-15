@@ -9,9 +9,9 @@ class Solution:
         result = []
         # sort list to use two-sum algo
         nums.sort()
-        for firstIndex in range(0, len(nums) - 3):
+        for firstIndex, firstValue in enumerate(nums):
             # if we already did the number, skip since nothing will be new
-            if firstIndex > 0 and nums[firstIndex - 1] == nums[firstIndex]:
+            if firstIndex > 0 and nums[firstIndex - 1] == firstValue:
                 continue
             # set remaining list to search
             lesserAddend = firstIndex + 1
@@ -19,7 +19,7 @@ class Solution:
             # Work through list until invalid result (index1 >= index2) occurs
             while lesserAddend < greaterAddend:
                 # calc sum
-                currentSum = nums[firstIndex] + nums[lesserAddend] + nums[greaterAddend]
+                currentSum = firstValue + nums[lesserAddend] + nums[greaterAddend]
                 # adjust addends
                 if currentSum > 0:
                     greaterAddend -= 1
@@ -27,7 +27,7 @@ class Solution:
                     lesserAddend += 1
                 else:
                     # add solution and adjust two-sum search
-                    result.append([nums[firstIndex], nums[lesserAddend], nums[greaterAddend]])
+                    result.append([firstValue, nums[lesserAddend], nums[greaterAddend]])
                     lesserAddend += 1
                     while nums[lesserAddend] == nums[lesserAddend - 1] and lesserAddend < greaterAddend:
                         lesserAddend += 1
