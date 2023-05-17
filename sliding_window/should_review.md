@@ -1,1 +1,2 @@
 - longest repeating character replacement
+- permutation in string
