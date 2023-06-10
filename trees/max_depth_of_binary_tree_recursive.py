@@ -2,6 +2,7 @@
 
 # Time: O(n), must iterate over each node
 # Space: O(n), stores 3 depth values for each node visited (in addition to recursive overhead)
+# For worst case this is n.
 
 # Definition for a binary tree node.
 # class TreeNode:
