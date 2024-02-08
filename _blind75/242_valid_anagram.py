@@ -18,7 +18,7 @@ class Solution:
         return True
 
 # Time: O(n), iterates over length n twice
-# Space: O(n), stores two pairs for each unique character in input strings -> this is up to length n
+# Space: O(n), stores two pairs for each unique character in input strings -> this is up to length n if keys are unique
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
