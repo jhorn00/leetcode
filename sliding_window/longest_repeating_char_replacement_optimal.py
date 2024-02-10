@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Time: O(n), iterates over list once
+# Time: O(n), iterates over list at most twice
 # Space: O(1), stores 4 ints, a char, and has a map with at most 26 pairs
 
 class Solution:

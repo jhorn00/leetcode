@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-# Time: O(n), iterates over list once
-# Space: O(n), stores a set of characters up to n length
+# Time: O(n), iterates over input string at most twice
+# Space: O(n), store the whole string at most
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
