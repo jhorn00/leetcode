@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Time: O(n), iterates over input string at most twice
+# Time: O(n), iterates over input string at most twic
 # Space: O(n), store the whole string at most
 
 class Solution:
